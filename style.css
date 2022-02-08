@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  background-color: hsl(229, 57%, 11%);
+  background-repeat: no-repeat;
+  height: 42rem;
+  background-image: url(/images/bg-desktop.png);
+  background-size: 100rem 20rem;
+  background-position: left 0px top 352px, right 0 bottom 0px;
+}
+
+.menu-box {
+  background-color: hsl(228, 56%, 26%);
+  width: 20rem;
+  height: 12rem;
+  margin-top: 15rem;
+  margin-left: 16rem;
+  border-radius: 12px;
+  border-top-right-radius: 100px;
+}
+
+.fylo-icon {
+  padding: 2rem;
+}
+
+.menu-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+  position: absolute;
+  margin-left: 30px;
+}
+
+.icon-document {
+  padding: 10px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  height: 18px;
+}
+
+.icon-folder {
+  padding: 10px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  height: 17px;
+}
+
+.icon-upload {
+  padding: 10px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 8px;
+}
+
+.memory-box {
+  position: absolute;
+  background-color: hsl(228, 56%, 26%);
+  width: 33rem;
+  height: 9rem;
+  margin-left: 39rem;
+  margin-top: 18rem;
+  border-radius: 8px;
+}
+
+p {
+  padding: 35px;
+  color: hsl(229, 7%, 55%);
+}
+
+strong {
+  color: hsl(243, 100%, 93%);
+}
+
+.progress {
+  position: relative;
+  width: 28rem;
+  height: 20px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  margin-left: 38px;
+  overflow: hidden;
+  margin-top: -21px;
+}
+
+.progress__fill {
+  width: 81.5%;
+  height: 100%;
+  background: hsl(335, 100%, 65%);
+}
+
+.meter {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(243, 100%, 93%);
+  margin-top: 6px;
+}
+
+h1 {
+  font-size: 11px;
+  margin-left: 38px;
+}
+
+h2 {
+  font-size: 11px;
+  margin-right: 44px;
+}
+
+.comments {
+  position: absolute;
+  width: 8rem;
+  margin-top: 16rem;
+  margin-left: 59rem;
+}
+
+.comment {
+  width: 100%;
+}
+
+h3 {
+  position: absolute;
+  font-size: 30px;
+}
+
+.parameters {
+  white-space: nowrap;
+  position: absolute;
+  margin-top: -25px;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.bubble {
+  position: relative;
+  background: white;
+  padding: 20px;
+  color: #222;
+  border-radius: 5px;
+  height: 1.5rem;
+}
+
+.bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  bottom: -26px;
+  right: 0px;
+
+  width: 0px;
+  height: 0px;
+  border-top: 1px solid transparent;
+  border-bottom: 28px solid transparent;
+  border-right: 20px solid #fff;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  color: aliceblue;
+}
+
+@media (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    background-color: hsl(229, 57%, 11%);
+    background-repeat: no-repeat;
+    height: 46rem;
+    background-image: url(/images/bg-desktop.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+  }
+
+  .menu-box {
+    background-color: hsl(228, 56%, 26%);
+    width: 19rem;
+    height: 12rem;
+    margin-top: 11rem;
+    margin-left: 3rem;
+    border-radius: 12px;
+    border-top-right-radius: 100px;
+  }
+
+  p {
+    white-space: nowrap;
+    margin-left: -4px;
+  }
+
+  .memory-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: hsl(228, 56%, 26%);
+    width: 19rem;
+    height: 10rem;
+    margin-left: 3rem;
+    margin-top: 24rem;
+    border-radius: 8px;
+  }
+
+  .progress {
+    position: relative;
+    width: 16rem;
+    height: 20px;
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    margin-left: 22px;
+    overflow: hidden;
+    margin-top: -21px;
+  }
+
+  .progress__fill {
+    width: 81.5%;
+    height: 100%;
+    background: hsl(335, 100%, 65%);
+  }
+
+  h1 {
+    margin-left: 25px;
+  }
+
+  h2 {
+    margin-right: 27px;
+  }
+
+  .bubble {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    color: #222;
+    border-radius: 5px;
+    height: 1.5rem;
+  }
+
+  .comments {
+    width: 8rem;
+    margin-top: 32rem;
+    margin-left: 7rem;
+  }
+
+  .comment {
+    width: 100%;
+  }
+
+  .attribution {
+    position: absolute;
+    margin-left: 4rem;
+    bottom: -7rem;
+    color: aliceblue;
+  }
+}
+
+
+@media only screen and (min-width: 200px) {
+  .bubble::after {
+    display:none;
+  }
